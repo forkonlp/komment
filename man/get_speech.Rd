@@ -7,19 +7,14 @@
 get_speech(link, paragraph = FALSE)
 }
 \arguments{
-\item{link}{게시글의 url 주소입니다. 한 번에 한 주소만 가능합니다.
-\url{http://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&catid=c_pa02062&artid=1310475}
-와 같이 생겼습니다.
-character를 입력으로 받습니다.}
+\item{link}{Sciprt link form \code{\link{search_speech}}. Like form is like
+\url{http://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&catid=c_pa02062&artid=1310475}}
 
-\item{paragraph}{문단 단위로 분리할지 말지를 정합니다.
-기본값은 FALSE 입니다.
-logical 을 입력으로 받습니다.}
+\item{paragraph}{logical if sepeate paragraph or not. Default is FALSE.}
 }
 \value{
-tibble 자료형으로 title, date, president, place, field, event, source, paragraph, content의 9개 컬럼을 가집니다.
+a [tibble][tibble::tibble-package] title, date, president, place, field, event, source, paragraph, content
 }
 \description{
-\code{\link{search_speech}}에서 얻은 주소:link를 기준으로 연설문을 가져옵니다.
-한번에 한 주소만 가져올 수 있습니다.
+get Speech's script of link from \code{\link{search_speech}}. only can get one script at once.
 }

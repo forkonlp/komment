@@ -7,10 +7,8 @@
 get_president()
 }
 \value{
-character vector로 역대 대통령:president을 확인합니다.
+character vector of president names
 }
 \description{
-\code{\link{search_speech}} 함수에서 사용할 president 조건을 출력합니다.
-대통령에 대한 값들을 확인할 수 있습니다.
-인터넷을 사용하는 기능입니다.
+return options of president params of \code{\link{search_speech}}.
 }
