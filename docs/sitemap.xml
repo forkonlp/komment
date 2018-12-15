@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://forkonlp.github.io/presidentSpeechKr/index.html</loc>
+    <loc>http://forkonlp.github.io/presidentSpeech/index.html</loc>
   </url>
   <url>
-    <loc>http://forkonlp.github.io/presidentSpeechKr/reference/get_event.html</loc>
+    <loc>http://forkonlp.github.io/presidentSpeech/reference/get_event.html</loc>
   </url>
   <url>
-    <loc>http://forkonlp.github.io/presidentSpeechKr/reference/get_field.html</loc>
+    <loc>http://forkonlp.github.io/presidentSpeech/reference/get_field.html</loc>
   </url>
   <url>
-    <loc>http://forkonlp.github.io/presidentSpeechKr/reference/get_president.html</loc>
+    <loc>http://forkonlp.github.io/presidentSpeech/reference/get_president.html</loc>
   </url>
   <url>
-    <loc>http://forkonlp.github.io/presidentSpeechKr/reference/get_speech.html</loc>
+    <loc>http://forkonlp.github.io/presidentSpeech/reference/get_speech.html</loc>
   </url>
   <url>
-    <loc>http://forkonlp.github.io/presidentSpeechKr/reference/search_speech.html</loc>
+    <loc>http://forkonlp.github.io/presidentSpeech/reference/search_speech.html</loc>
   </url>
   <url>
-    <loc>http://forkonlp.github.io/presidentSpeechKr/reference/spidx.html</loc>
+    <loc>http://forkonlp.github.io/presidentSpeech/reference/spidx.html</loc>
   </url>
 </urlset>

@@ -6,12 +6,12 @@
 \title{speech index data}
 \format{tibble with columns
 \describe{
-\item{president}
-\item{field}
-\item{event}
-\item{title}
-\item{date}
-\item{link}
+\item{president}{president}
+\item{field}{field}
+\item{event}{event}
+\item{title}{title}
+\item{date}{date}
+\item{link}{link}
 }}
 \source{
 http://www.pa.go.kr/research/contents/speech/index.jsp

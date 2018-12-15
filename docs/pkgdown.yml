@@ -1,8 +1,8 @@
-pandoc: 2.2.1
+pandoc: 2.3.1
 pkgdown: 1.1.0.9000
 pkgdown_sha: c990ad4daa65267cbd90ab7f1438bab329da3bc0
 articles: []
 urls:
-  reference: http://forkonlp.github.io/presidentSpeechKr/reference
-  article: http://forkonlp.github.io/presidentSpeechKr/articles
+  reference: http://forkonlp.github.io/presidentSpeech/reference
+  article: http://forkonlp.github.io/presidentSpeech/articles
 

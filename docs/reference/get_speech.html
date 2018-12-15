@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>get speech — get_speech • presidentSpeechKr</title>
+<title>get speech — get_speech • presidentSpeech</title>
 
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
@@ -34,8 +34,7 @@
 
 <meta property="og:title" content="get speech — get_speech" />
 
-<meta property="og:description" content="search_speech에서 얻은 주소:link를 기준으로 연설문을 가져옵니다.
-한번에 한 주소만 가져올 수 있습니다." />
+<meta property="og:description" content="get Speech's script of link from search_speech. only can get one script at once." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -74,8 +73,8 @@
         <span class="icon-bar"></span>
       </button>
       <span class="navbar-brand">
-        <a class="navbar-link" href="../index.html">presidentSpeechKr</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.2.1</span>
+        <a class="navbar-link" href="../index.html">presidentSpeech</a>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
       </span>
     </div>
 
@@ -97,7 +96,7 @@
       
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/forkonlp/presidentSpeechKr">
+  <a href="https://github.com/forkonlp/presidentSpeech">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -115,14 +114,13 @@
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>get speech</h1>
-    <small class="dont-index">Source: <a href='https://github.com/forkonlp/presidentSpeechKr/blob/master/R/get_speech.R'><code>R/get_speech.R</code></a></small>
+    <small class="dont-index">Source: <a href='https://github.com/forkonlp/presidentSpeech/blob/master/R/get_speech.R'><code>R/get_speech.R</code></a></small>
     <div class="hidden name"><code>get_speech.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p><code><a href='search_speech.html'>search_speech</a></code>에서 얻은 주소:link를 기준으로 연설문을 가져옵니다.
-한번에 한 주소만 가져올 수 있습니다.</p>
+    <p>get Speech's script of link from <code><a href='search_speech.html'>search_speech</a></code>. only can get one script at once.</p>
     
     </div>
 
@@ -133,22 +131,18 @@
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
       <th>link</th>
-      <td><p>게시글의 url 주소입니다. 한 번에 한 주소만 가능합니다.
-<a href='http://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&amp;catid=c_pa02062&amp;artid=1310475'>http://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&amp;catid=c_pa02062&amp;artid=1310475</a>
-와 같이 생겼습니다.
-character를 입력으로 받습니다.</p></td>
+      <td><p>Sciprt link form <code><a href='search_speech.html'>search_speech</a></code>. Like form is like
+<a href='http://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&amp;catid=c_pa02062&amp;artid=1310475'>http://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&amp;catid=c_pa02062&amp;artid=1310475</a></p></td>
     </tr>
     <tr>
       <th>paragraph</th>
-      <td><p>문단 단위로 분리할지 말지를 정합니다.
-기본값은 FALSE 입니다.
-logical 을 입력으로 받습니다.</p></td>
+      <td><p>logical if sepeate paragraph or not. Default is FALSE.</p></td>
     </tr>
     </table>
     
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>tibble 자료형으로 title, date, president, place, field, event, source, paragraph, content의 9개 컬럼을 가집니다.</p>
+    <p>a [tibble][tibble::tibble-package] title, date, president, place, field, event, source, paragraph, content</p>
     
 
   </div>
