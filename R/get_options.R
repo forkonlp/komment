@@ -28,40 +28,8 @@ get_president <- function(){
   res <- gsub("\\s+", "", res)
 
   return(res)
-
 }
-#'
-#' #' get search options for field
-#' #'
-#' #' return options of field params of \code{\link{search_speech}}.
-#' #'
-#' #' @return character vector of fields
-#' #'
-#' #' @export
-#' #' @importFrom rvest html_nodes
-#' #' @importFrom rvest html_text
-#' #' @importFrom rvest html_attr
-#' #' @importFrom xml2 read_html
-#'
-#' get_media <- function(){
-#'   tar <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
-#'
-#'   hobj <- xml2::read_html(tar)
-#'
-#'   category <- rvest::html_nodes(hobj, "ul.iList li label")
-#'   category <- rvest::html_attr(category, "for")
-#'
-#'   label <- rvest::html_nodes(hobj, "ul.iList li label")
-#'   label <- rvest::html_text(label)
-#'
-#'   res <- data.frame(category, label, stringsAsFactors = F)
-#'
-#'   res <- res[-grep("[a-z]0", res$category),]
-#'   res <- res[grep("Field", res$category),]
-#'   res <- res$label
-#'
-#'   return(res)
-#' }
+
 
 #' get search options for event
 #'
