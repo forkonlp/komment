@@ -36,6 +36,8 @@ search_speech <- function(keyword = "",
                           order = 1) {
   root <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
 
+  mediaType <- mediaType[1]
+
   params <-
     paste0(
       "spMode=",
@@ -47,6 +49,8 @@ search_speech <- function(keyword = "",
       "&searchHistoryCount=0",
       "&damPst=",
       president,
+      "&mediaType=",
+      mediaType,
       "&speechEvent=",
       event,
       "&searchKeyword=",
