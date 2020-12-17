@@ -4,8 +4,15 @@
 \alias{search_speech}
 \title{search speech}
 \usage{
-search_speech(keyword = "", searchField = 0, count = 10000,
-  president = "", field = "", event = "", order = 1)
+search_speech(
+  keyword = "",
+  searchField = 0,
+  count = 10000,
+  president = "",
+  mediaType = c("doc", "mp3", "mp4", "all"),
+  event = "",
+  order = 1
+)
 }
 \arguments{
 \item{keyword}{keyword to search. Default is all results. Accept character data type.}
@@ -17,8 +24,7 @@ search_speech(keyword = "", searchField = 0, count = 10000,
 \item{president}{president to search. Default is all results.
 \code{\link{get_president}} provides available list. Accept character data type.}
 
-\item{field}{field to search. Default is all results.
-\code{\link{get_field}} provides available list. Accept character data type.}
+\item{mediaType}{mediaType}
 
 \item{event}{event to search. Default is all results.
 \code{\link{get_event}} provides available list. Accept character data type.}

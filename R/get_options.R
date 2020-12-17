@@ -15,55 +15,53 @@ get_president <- function(){
 
   hobj <- xml2::read_html(tar)
 
-  category <- rvest::html_nodes(hobj, "ul.iList li label")
+  category <- rvest::html_nodes(hobj, "div.items label")
   category <- rvest::html_attr(category, "for")
 
-  label <- rvest::html_nodes(hobj, "ul.iList li label")
+  label <- rvest::html_nodes(hobj, "div.items label")
   label <- rvest::html_text(label)
 
   res <- data.frame(category, label, stringsAsFactors = F)
 
   res <- res[-grep("[a-z]0", res$category),]
-  res <- res[grep("damPst", res$category),]
   res <- res$label
-  res <- sapply(strsplit(res, " "), function(x) x[1])
+  res <- gsub("\\s+", "", res)
 
   return(res)
 
 }
-
-#' get search options for field
 #'
-#' return options of field params of \code{\link{search_speech}}.
+#' #' get search options for field
+#' #'
+#' #' return options of field params of \code{\link{search_speech}}.
+#' #'
+#' #' @return character vector of fields
+#' #'
+#' #' @export
+#' #' @importFrom rvest html_nodes
+#' #' @importFrom rvest html_text
+#' #' @importFrom rvest html_attr
+#' #' @importFrom xml2 read_html
 #'
-#' @return character vector of fields
+#' get_media <- function(){
+#'   tar <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
 #'
-#' @export
-#' @importFrom rvest html_nodes
-#' @importFrom rvest html_text
-#' @importFrom rvest html_attr
-#' @importFrom xml2 read_html
-
-
-get_field <- function(){
-  tar <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
-
-  hobj <- xml2::read_html(tar)
-
-  category <- rvest::html_nodes(hobj, "ul.iList li label")
-  category <- rvest::html_attr(category, "for")
-
-  label <- rvest::html_nodes(hobj, "ul.iList li label")
-  label <- rvest::html_text(label)
-
-  res <- data.frame(category, label, stringsAsFactors = F)
-
-  res <- res[-grep("[a-z]0", res$category),]
-  res <- res[grep("Field", res$category),]
-  res <- res$label
-
-  return(res)
-}
+#'   hobj <- xml2::read_html(tar)
+#'
+#'   category <- rvest::html_nodes(hobj, "ul.iList li label")
+#'   category <- rvest::html_attr(category, "for")
+#'
+#'   label <- rvest::html_nodes(hobj, "ul.iList li label")
+#'   label <- rvest::html_text(label)
+#'
+#'   res <- data.frame(category, label, stringsAsFactors = F)
+#'
+#'   res <- res[-grep("[a-z]0", res$category),]
+#'   res <- res[grep("Field", res$category),]
+#'   res <- res$label
+#'
+#'   return(res)
+#' }
 
 #' get search options for event
 #'
@@ -83,17 +81,10 @@ get_event <- function(){
 
   hobj <- xml2::read_html(tar)
 
-  category <- rvest::html_nodes(hobj, "ul.iList li label")
-  category <- rvest::html_attr(category, "for")
+  category <- rvest::html_nodes(hobj, "div.items option")
+  category <- rvest::html_attr(category, "value")
 
-  label <- rvest::html_nodes(hobj, "ul.iList li label")
-  label <- rvest::html_text(label)
-
-  res <- data.frame(category, label, stringsAsFactors = F)
-
-  res <- res[-grep("[a-z]0", res$category),]
-  res <- res[grep("Event", res$category),]
-  res <- res$label
+  res <- category[-grepl("", category)]
 
   return(res)
 }

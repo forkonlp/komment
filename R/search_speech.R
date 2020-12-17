@@ -7,8 +7,7 @@
 #' @param count request number of results. Default is all. Accept numeric data type.
 #' @param president president to search. Default is all results.
 #'                  \code{\link{get_president}} provides available list. Accept character data type.
-#' @param field field to search. Default is all results.
-#'              \code{\link{get_field}} provides available list. Accept character data type.
+#' @param mediaType mediaType
 #' @param event event to search. Default is all results.
 #'              \code{\link{get_event}} provides available list. Accept character data type.
 #' @param order order of search results. Defaults is order by date.
@@ -32,7 +31,7 @@ search_speech <- function(keyword = "",
                           searchField = 0,
                           count = 10000,
                           president = "",
-                          field = "",
+                          mediaType = c("doc","mp3","mp4","all"),
                           event = "",
                           order = 1) {
   root <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
@@ -48,11 +47,8 @@ search_speech <- function(keyword = "",
       "&searchHistoryCount=0",
       "&damPst=",
       president,
-      "&speechField=",
-      field,
       "&speechEvent=",
       event,
-      "&searchCondition=0",
       "&searchKeyword=",
       keyword,
       "&pageUnit=",
@@ -93,7 +89,7 @@ search_speech <- function(keyword = "",
                     to = length(dat),
                     by = 6)]
 
-    link <- rvest::html_nodes(hobj, "td.title a")
+    link <- rvest::html_nodes(hobj, "td.subject a")
     link <- rvest::html_attr(link, "href")
     link <- paste0(root, link)
 

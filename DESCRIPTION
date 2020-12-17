@@ -1,7 +1,7 @@
 Package: presidentSpeech
 Type: Package
 Title: Korean President's Speech Text
-Version: 0.0.1
+Version: 0.0.2
 Authors@R: person(given = "Chanyub",
              family = "Park",
              role = c("aut","cre"),
@@ -19,7 +19,7 @@ Imports:
     tibble
 URL: http://github.com/forkonlp/presidentSpeech
 BugReports: https://github.com/forkonlp/presidentSpeech/issues
-RoxygenNote: 6.1.0
+RoxygenNote: 7.1.1
 Suggests: 
     covr,
     testthat

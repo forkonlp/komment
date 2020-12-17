@@ -2,7 +2,17 @@
 % Please edit documentation in R/get_options.R
 \name{get_event}
 \alias{get_event}
-\title{get search options for event}
+\title{#' get search options for field
+#'
+#' return options of field params of \code{\link{search_speech}}.
+#'
+#' @return character vector of fields
+#'
+#' @export
+#' @importFrom rvest html_nodes
+#' @importFrom rvest html_text
+#' @importFrom rvest html_attr
+#' @importFrom xml2 read_html}
 \usage{
 get_event()
 }
@@ -10,5 +20,8 @@ get_event()
 character vector of events
 }
 \description{
-return options of event params of \code{\link{search_speech}}.
+
+}
+\details{
+
 }

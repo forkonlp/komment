@@ -4,7 +4,8 @@
 \name{spidx}
 \alias{spidx}
 \title{speech index data}
-\format{tibble with columns
+\format{
+tibble with columns
 \describe{
 \item{president}{president}
 \item{field}{field}
@@ -12,7 +13,8 @@
 \item{title}{title}
 \item{date}{date}
 \item{link}{link}
-}}
+}
+}
 \source{
 http://www.pa.go.kr/research/contents/speech/index.jsp
 }
