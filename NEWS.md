@@ -1,3 +1,7 @@
+# presidentSpeech 0.0.3
+
+* target url schema change from http to https.
+
 # presidentSpeech 0.0.2
 
 * fix all function for site update.
