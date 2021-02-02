@@ -11,7 +11,7 @@
 #' @importFrom xml2 read_html
 
 get_president <- function(){
-  tar <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
+  tar <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
   hobj <- xml2::read_html(tar)
 

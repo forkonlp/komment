@@ -34,7 +34,7 @@ search_speech <- function(keyword = "",
                           mediaType = c("doc","mp3","mp4","all"),
                           event = "",
                           order = 1) {
-  root <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
+  root <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
   mediaType <- mediaType[1]
 
