@@ -45,7 +45,7 @@ get_president <- function(){
 #' @importFrom tibble tibble
 
 get_event <- function(){
-  tar <- "http://www.pa.go.kr/research/contents/speech/index.jsp"
+  tar <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
   hobj <- xml2::read_html(tar)
 
