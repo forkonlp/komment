@@ -66,11 +66,6 @@ jobs:
           key: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-${{ hashFiles('.github/r-depends.rds') }}
           restore-keys: ${{ matrix.config.os }}-${{ steps.install-r.outputs.installed-r-version }}-1-
 
-      - name: Install ca-certificates for ssl
-        if: runner.os == 'Linux'
-        run: |
-          sudo apt-get update && sudo apt-get install -y ca-certificates
-
       - name: Install system dependencies
         if: runner.os == 'Linux'
         run: |
