@@ -43,7 +43,7 @@ search_speech(count=20)
 두 번째는 speech text를 가져오는 함수입니다.
 
 ``` r
-get_speech("http://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&catid=c_pa02062&artid=1308580")
+get_speech("https://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&catid=c_pa02062&artid=1308580")
 ```
 
 ### 검색 조건에 대한 함수
@@ -61,5 +61,4 @@ get_field()
 get_event()
 ```
 
-[연설기록]: http://www.pa.go.kr/research/contents/speech/index.jsp
-[같은문제]: https://ja.stackoverflow.com/questions/24083/rstudio%E3%81%A7%E3%81%AErmecab%E3%81%AE%E8%B5%B7%E5%8B%95%E6%99%82%E3%81%AE%E3%82%A8%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%83%E3%82%BB%E3%83%BC%E3%82%B8
+[연설기록]: https://www.pa.go.kr/research/contents/speech/index.jsp
