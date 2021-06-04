@@ -3,6 +3,7 @@
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/presidentSpeech)](https://cran.r-project.org/package=presidentSpeech)
 [![R-CMD-check](https://github.com/forkonlp/presidentSpeech/workflows/R-CMD-check/badge.svg)](https://github.com/forkonlp/presidentSpeech/actions)
+[![Codecov test coverage](https://codecov.io/gh/forkonlp/presidentSpeech/branch/main/graph/badge.svg)](https://codecov.io/gh/forkonlp/presidentSpeech?branch=main)
 
 ## 3rd krdata project package!!!
 
