@@ -69,6 +69,11 @@ jobs:
       - name: Install system dependencies
         if: runner.os == 'Linux'
         run: |
+          apt-get update && apt-get install -y ca-certificates
+
+      - name: Install system dependencies
+        if: runner.os == 'Linux'
+        run: |
           pak::local_system_requirements(execute = TRUE)
           pak::pkg_system_requirements("rcmdcheck", execute = TRUE)
         shell: Rscript {0}
