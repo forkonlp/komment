@@ -12,7 +12,7 @@
 #' @export
 #' @importFrom rvest html_nodes
 #' @importFrom rvest html_text
-#' @importFrom httr GET content
+#' @importFrom httr GET content config
 #' @importFrom tibble tibble
 
 get_speech <- function(link, paragraph = FALSE) {
@@ -20,7 +20,7 @@ get_speech <- function(link, paragraph = FALSE) {
     link <- as.character(link)
   }
 
-  hobj <- httr::GET(link, config(ssl_verifypeer=0))
+  hobj <- httr::GET(link, httr::config(ssl_verifypeer=0))
   hobj <- httr::content(hobj)
 
   title <- rvest::html_nodes(hobj, "td.subject")

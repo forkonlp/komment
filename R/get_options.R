@@ -42,13 +42,13 @@ get_president <- function(){
 #' @importFrom rvest html_nodes
 #' @importFrom rvest html_text
 #' @importFrom rvest html_attr
-#' @importFrom httr GET content
+#' @importFrom httr GET content config
 #' @importFrom tibble tibble
 
 get_event <- function(){
   tar <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
-  hobj <- httr::GET(tar, config(ssl_verifypeer=0))
+  hobj <- httr::GET(tar, httr::config(ssl_verifypeer=0))
   hobj <- httr::content(hobj)
 
   category <- rvest::html_nodes(hobj, "div.items option")
