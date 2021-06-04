@@ -2,9 +2,7 @@
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![CRAN status](https://www.r-pkg.org/badges/version/presidentSpeech)](https://cran.r-project.org/package=presidentSpeech)
-[![Coverage status](https://codecov.io/gh/forkonlp/presidentSpeech/branch/master/graph/badge.svg)](https://codecov.io/github/forkonlp/presidentSpeech?branch=master)
-[![Travis-CI Build Status](https://travis-ci.org/forkonlp/presidentSpeech.svg?branch=master)](https://travis-ci.org/forkonlp/presidentSpeech)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/forkonlp/presidentSpeech?branch=master&svg=true)](https://ci.appveyor.com/project/forkonlp/presidentSpeech)
+[![R-CMD-check](https://github.com/forkonlp/presidentSpeech/workflows/R-CMD-check/badge.svg)](https://github.com/forkonlp/presidentSpeech/actions)
 
 ## 3rd krdata project package!!!
 
