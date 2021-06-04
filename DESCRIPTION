@@ -14,8 +14,8 @@ LazyData: true
 Depends:
     R (>= 3.2)
 Imports: 
-    xml2,
     rvest,
+    httr,
     tibble
 URL: http://github.com/forkonlp/presidentSpeech
 BugReports: https://github.com/forkonlp/presidentSpeech/issues

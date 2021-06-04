@@ -8,12 +8,13 @@
 #' @importFrom rvest html_nodes
 #' @importFrom rvest html_text
 #' @importFrom rvest html_attr
-#' @importFrom xml2 read_html
+#' @importFrom httr GET content
 
 get_president <- function(){
   tar <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
-  hobj <- xml2::read_html(tar)
+  hobj <- httr::GET(tar)
+  hobj <- httr::content(hobj)
 
   category <- rvest::html_nodes(hobj, "div.items label")
   category <- rvest::html_attr(category, "for")
@@ -41,13 +42,14 @@ get_president <- function(){
 #' @importFrom rvest html_nodes
 #' @importFrom rvest html_text
 #' @importFrom rvest html_attr
-#' @importFrom xml2 read_html
+#' @importFrom httr GET content
 #' @importFrom tibble tibble
 
 get_event <- function(){
   tar <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
-  hobj <- xml2::read_html(tar)
+  hobj <- httr::GET(tar, config(ssl_verifypeer=0))
+  hobj <- httr::content(hobj)
 
   category <- rvest::html_nodes(hobj, "div.items option")
   category <- rvest::html_attr(category, "value")

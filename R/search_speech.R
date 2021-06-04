@@ -24,7 +24,7 @@
 #' @importFrom rvest html_nodes
 #' @importFrom rvest html_text
 #' @importFrom rvest html_attr
-#' @importFrom xml2 read_html
+#' @importFrom httr GET content
 #' @importFrom tibble tibble
 
 search_speech <- function(keyword = "",
@@ -71,7 +71,8 @@ search_speech <- function(keyword = "",
 
   tar <- paste0(root, "?", params)
 
-  hobj <- xml2::read_html(tar)
+  hobj <- httr::GET(tar, config(ssl_verifypeer=0))
+  hobj <- httr::content(hobj)
 
   dat <- rvest::html_nodes(hobj, "td")
   dat <- rvest::html_text(dat)
