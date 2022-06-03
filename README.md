@@ -16,7 +16,7 @@
 [GitHub](https://github.com/)에서 설치할 수 있습니다.
 
 ``` r
-install.packages('presidentSpeech' repos = 'https://forkonlp.r-universe.dev')
+install.packages('presidentSpeech', repos = 'https://forkonlp.r-universe.dev')
 ```
 
 ## 설명문서 help
