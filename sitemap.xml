@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://forkonlp.github.io/presidentSpeech/404.html</loc>
+  </url>
+  <url>
+    <loc>http://forkonlp.github.io/presidentSpeech/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>http://forkonlp.github.io/presidentSpeech/authors.html</loc>
+  </url>
+  <url>
     <loc>http://forkonlp.github.io/presidentSpeech/index.html</loc>
+  </url>
+  <url>
+    <loc>http://forkonlp.github.io/presidentSpeech/news/index.html</loc>
   </url>
   <url>
     <loc>http://forkonlp.github.io/presidentSpeech/reference/get_event.html</loc>
@@ -11,6 +23,9 @@
   </url>
   <url>
     <loc>http://forkonlp.github.io/presidentSpeech/reference/get_speech.html</loc>
+  </url>
+  <url>
+    <loc>http://forkonlp.github.io/presidentSpeech/reference/index.html</loc>
   </url>
   <url>
     <loc>http://forkonlp.github.io/presidentSpeech/reference/search_speech.html</loc>
