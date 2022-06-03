@@ -16,12 +16,7 @@
 [GitHub](https://github.com/)에서 설치할 수 있습니다.
 
 ``` r
-options(repos = c(
-    forkonlp = 'https://forkonlp.r-universe.dev',
-    CRAN = 'https://cloud.r-project.org')
-)
-
-install.packages('presidentSpeech')
+install.packages('presidentSpeech' repos = 'https://forkonlp.r-universe.dev')
 ```
 
 ## 설명문서 help
