@@ -1,4 +1,4 @@
-# komment
+# komment [<img src="man/figures/logo.png" align="right" height=140/>](https://forkonlp.github.io/komment/index.html)
 
 <!-- badges: start -->
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
