@@ -1,0 +1,68 @@
+---
+title: "readme_kr"
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+# komment 
+
+<!-- badges: start -->
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Coverage status](https://codecov.io/gh/forkonlp/komment/branch/master/graph/badge.svg)](https://codecov.io/github/forkonlp/komment?branch=main) 
+[![](https://cranlogs.r-pkg.org/badges/komment)](https://cran.r-project.org/package=komment)
+[![runiverse-name](https://forkonlp.r-universe.dev/badges/:name)](https://forkonlp.r-universe.dev/)
+[![runiverse-package](https://forkonlp.r-universe.dev/badges/komment)](https://forkonlp.r-universe.dev/ui#packages)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/komment)](https://cran.r-project.org/package=komment)
+[![R-CMD-check](https://github.com/forkonlp/komment/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/forkonlp/komment/actions/workflows/R-CMD-check.yaml)
+<!-- badges: end -->
+
+## 설치
+
+``` r
+# CRAN 버전 (아직 안됩니다)
+install.packages('komment')
+
+# 개발 버전
+install.packages('komment', repos = 'https://forkonlp.r-universe.dev')
+```
+
+## 예제
+
+2개의 speech에 대한 함수와 3개의 검색 조건에 대한 함수로 이루어져 있습니다.
+
+### speech 에 대한 함수
+
+처음 함수는 speech를 검색하는 함수입니다. `library(komment)`를 이용해 패키지를 로드해야 사용할 수 있습니다.
+
+```{r setup}
+library(komment)
+```
+
+```{r}
+search_speech(count = 10)
+```
+
+두 번째는 speech text를 가져오는 함수입니다.
+
+```{r}
+get_speech("https://www.pa.go.kr/research/contents/speech/index.jsp?spMode=view&catid=c_pa02062&artid=1308580")
+```
+
+### 검색 조건에 대한 함수
+
+`search_speech()` 함수의 인자 중에 president, field, event에서 사용할 조건을 출력해줍니다.
+
+```{r}
+# 대통령 리스트 출력
+get_president()
+
+# 유형 리스트 출력
+get_event()
+```
+
+[연설기록]: https://www.pa.go.kr/research/contents/speech/index.jsp
