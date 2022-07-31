@@ -71,7 +71,7 @@ search_speech <- function(keyword = "",
 
   tar <- paste0(root, "?", params)
 
-  hobj <- httr::GET(tar, httr::config(ssl_verifypeer=0))
+  hobj <- httr::GET(tar, httr::config(ssl_verifypeer = 0))
   hobj <- httr::content(hobj)
 
   dat <- rvest::html_nodes(hobj, "td")

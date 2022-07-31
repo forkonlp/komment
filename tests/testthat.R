@@ -1,4 +1,4 @@
 library(testthat)
-library(presidentSpeech)
+library(komment)
 
-test_check("presidentSpeech")
+test_check("komment")

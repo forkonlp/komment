@@ -1,13 +1,13 @@
-# presidentSpeech
+# komment
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/presidentSpeech)](https://cran.r-project.org/package=presidentSpeech)
-[![R-CMD-check](https://github.com/forkonlp/presidentSpeech/workflows/R-CMD-check/badge.svg)](https://github.com/forkonlp/presidentSpeech/actions)
-[![Codecov test coverage](https://codecov.io/gh/forkonlp/presidentSpeech/branch/main/graph/badge.svg)](https://codecov.io/gh/forkonlp/presidentSpeech?branch=main)
+[![CRAN status](https://www.r-pkg.org/badges/version/komment)](https://cran.r-project.org/package=komment)
+[![R-CMD-check](https://github.com/forkonlp/komment/workflows/R-CMD-check/badge.svg)](https://github.com/forkonlp/komment/actions)
+[![Codecov test coverage](https://codecov.io/gh/forkonlp/komment/branch/main/graph/badge.svg)](https://codecov.io/gh/forkonlp/komment?branch=main)
 
 ## 3rd krdata project package!!!
 
-<https://forkonlp.github.io/presidentSpeech/index.html>
+<https://forkonlp.github.io/komment/index.html>
 
 대통령 기록 연구실의 [연설기록][연설기록] 페이지에서 연설문을 가져옵니다.
 
@@ -16,7 +16,7 @@
 [GitHub](https://github.com/)에서 설치할 수 있습니다.
 
 ``` r
-install.packages('presidentSpeech', repos = 'https://forkonlp.r-universe.dev')
+install.packages('komment', repos = 'https://forkonlp.r-universe.dev')
 ```
 
 ## 설명문서 help
@@ -29,7 +29,7 @@ install.packages('presidentSpeech', repos = 'https://forkonlp.r-universe.dev')
 
 ### speech 에 대한 함수
 
-처음 함수는 speech를 검색하는 함수입니다. `library(presidentSpeech)`를 이용해 패키지를 로드해야 사용할 수 있습니다.
+처음 함수는 speech를 검색하는 함수입니다. `library(komment)`를 이용해 패키지를 로드해야 사용할 수 있습니다.
 
 ``` r
 search_speech(count=20)

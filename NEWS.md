@@ -1,3 +1,7 @@
+# komment 0.1.0
+
+* Change package name
+
 # presidentSpeech 0.0.3
 
 * target url schema change from http to https.

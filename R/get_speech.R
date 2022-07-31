@@ -20,7 +20,7 @@ get_speech <- function(link, paragraph = FALSE) {
     link <- as.character(link)
   }
 
-  hobj <- httr::GET(link, httr::config(ssl_verifypeer=0))
+  hobj <- httr::GET(link, httr::config(ssl_verifypeer = 0))
   hobj <- httr::content(hobj)
 
   title <- rvest::html_nodes(hobj, "td.subject")
@@ -42,11 +42,8 @@ get_speech <- function(link, paragraph = FALSE) {
   }
 
   date <- meta_data[2]
-
   president <- meta_data[3]
-
   place <- meta_data[4]
-
   event <- meta_data[5]
 
   source <- meta_data[6]

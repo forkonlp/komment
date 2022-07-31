@@ -10,10 +10,10 @@
 #' @importFrom rvest html_attr
 #' @importFrom httr GET content config
 
-get_president <- function(){
+get_president <- function() {
   tar <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
-  hobj <- httr::GET(tar, httr::config(ssl_verifypeer=0))
+  hobj <- httr::GET(tar, httr::config(ssl_verifypeer = 0))
   hobj <- httr::content(hobj)
 
   category <- rvest::html_nodes(hobj, "div.items label")
@@ -22,9 +22,9 @@ get_president <- function(){
   label <- rvest::html_nodes(hobj, "div.items label")
   label <- rvest::html_text(label)
 
-  res <- data.frame(category, label, stringsAsFactors = F)
+  res <- data.frame(category, label)
 
-  res <- res[-grep("[a-z]0", res$category),]
+  res <- res[-grep("[a-z]0", res$category), ]
   res <- res$label
   res <- gsub("\\s+", "", res)
 
@@ -45,10 +45,10 @@ get_president <- function(){
 #' @importFrom httr GET content config
 #' @importFrom tibble tibble
 
-get_event <- function(){
+get_event <- function() {
   tar <- "https://www.pa.go.kr/research/contents/speech/index.jsp"
 
-  hobj <- httr::GET(tar, httr::config(ssl_verifypeer=0))
+  hobj <- httr::GET(tar, httr::config(ssl_verifypeer = 0))
   hobj <- httr::content(hobj)
 
   category <- rvest::html_nodes(hobj, "div.items option")

@@ -1,4 +1,4 @@
-#' speech index data
+#' speech list data
 #'
 #' @source http://www.pa.go.kr/research/contents/speech/index.jsp
 #' @format tibble with columns
@@ -11,5 +11,5 @@
 #' \item{link}{link}
 #' }
 #' @examples
-#'   spidx
-"spidx"
+#'   speech_list
+"speech_list"
