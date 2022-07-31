@@ -7,7 +7,7 @@
 [![runiverse-name](https://forkonlp.r-universe.dev/badges/:name)](https://forkonlp.r-universe.dev/)
 [![runiverse-package](https://forkonlp.r-universe.dev/badges/komment)](https://forkonlp.r-universe.dev/ui#packages)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/komment)](https://cran.r-project.org/package=komment)
-[![R-CMD-check](https://github.com/forkonlp/komment/workflows/R-CMD-check/badge.svg)](https://github.com/forkonlp/komment/actions)
+[![R-CMD-check](https://github.com/forkonlp/komment/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/forkonlp/komment/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 대통령 기록 연구실의 [연설기록][연설기록] 페이지에서 연설문을 가져옵니다.
