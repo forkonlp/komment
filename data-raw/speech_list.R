@@ -1,4 +1,4 @@
-## code to prepare `DATASET` dataset goes here
+## code to prepare `speech_list` dataset goes here
 
 library(komment)
 
