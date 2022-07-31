@@ -1,7 +1,7 @@
 ## code to prepare `DATASET` dataset goes here
 
-library(presidentSpeech)
+library(komment)
 
-spidx <- search_speech()
+speech_list <- search_speech()
 
-usethis::use_data(spidx, overwrite = TRUE)
+usethis::use_data(speech_list, overwrite = TRUE)

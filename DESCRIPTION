@@ -1,4 +1,4 @@
-Package: presidentSpeech
+Package: komment
 Type: Package
 Title: Korean President's Speech Text
 Version: 0.1.0
@@ -17,9 +17,9 @@ Imports:
     rvest,
     httr,
     tibble
-URL: http://github.com/forkonlp/presidentSpeech
-BugReports: https://github.com/forkonlp/presidentSpeech/issues
-RoxygenNote: 7.1.1
+URL: http://github.com/forkonlp/komment
+BugReports: https://github.com/forkonlp/komment/issues
+RoxygenNote: 7.1.2
 Suggests: 
     covr,
     testthat

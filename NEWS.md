@@ -1,4 +1,6 @@
-# presidentSpeech 0.1.0
+# komment 0.1.0
+
+* Change package name
 
 # presidentSpeech 0.0.3
 
