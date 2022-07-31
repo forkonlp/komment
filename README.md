@@ -1,13 +1,14 @@
 # komment
 
-[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![CRAN status](https://www.r-pkg.org/badges/version/komment)](https://cran.r-project.org/package=komment)
+<!-- badges: start -->
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![Coverage status](https://codecov.io/gh/forkonlp/komment/branch/master/graph/badge.svg)](https://codecov.io/github/forkonlp/komment?branch=main) 
+[![](https://cranlogs.r-pkg.org/badges/komment)](https://cran.r-project.org/package=komment)
+[![runiverse-name](https://forkonlp.r-universe.dev/badges/:name)](https://forkonlp.r-universe.dev/)
+[![runiverse-package](https://forkonlp.r-universe.dev/badges/komment)](https://forkonlp.r-universe.dev/ui#packages)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/komment)](https://cran.r-project.org/package=komment)
 [![R-CMD-check](https://github.com/forkonlp/komment/workflows/R-CMD-check/badge.svg)](https://github.com/forkonlp/komment/actions)
-[![Codecov test coverage](https://codecov.io/gh/forkonlp/komment/branch/main/graph/badge.svg)](https://codecov.io/gh/forkonlp/komment?branch=main)
-
-## 3rd krdata project package!!!
-
-<https://forkonlp.github.io/komment/index.html>
+<!-- badges: end -->
 
 대통령 기록 연구실의 [연설기록][연설기록] 페이지에서 연설문을 가져옵니다.
 
