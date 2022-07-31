@@ -22,4 +22,5 @@ BugReports: https://github.com/forkonlp/komment/issues
 RoxygenNote: 7.1.2
 Suggests: 
     covr,
+    rmarkdown,
     testthat

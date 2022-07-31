@@ -8,3 +8,10 @@ template:
   params:
     toggle: manual
     ganalytics: UA-47822682-17
+navbar:
+  components:
+    articles:
+      text: 한글문서모음
+      menu:
+      - text: readme
+        href: articles/readme_kr.html
