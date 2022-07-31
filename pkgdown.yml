@@ -1,9 +1,9 @@
 pandoc: 2.7.3
-pkgdown: 2.0.3
+pkgdown: 2.0.6
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-06-03T12:54Z
+last_built: 2022-07-31T15:23Z
 urls:
-  reference: http://forkonlp.github.io/presidentSpeech/reference
-  article: http://forkonlp.github.io/presidentSpeech/articles
+  reference: http://forkonlp.github.io/komment/reference
+  article: http://forkonlp.github.io/komment/articles
 
